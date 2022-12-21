@@ -1,0 +1,37 @@
+div {
+  border: 1px solid lightgrey;
+  margin: 8px;
+}
+
+img {
+  max-height: 120px;
+  max-width: 100%;
+}
+
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 1000px 1000px;
+  margin: 56px 0;
+}
+
+#grid > div {
+  margin: 0 56px;
+}
+
+.review {
+  display: inline-block;
+  width: 30%;
+}
+
+.row-item {
+  display: inline-block;
+  width: 30%;
+}
