@@ -9,14 +9,15 @@ import Reviews from "../Reviews/Reviews";
 const StyledDashboardComponent = styled.div``;
 
 const Footer = styled.div`
-  background-color: #808080;
-  color: #a9a9a9;
+  background-color: #979292;
+  color: #363535;
   width: 100%;
 
   .anchor {
     color: #0000ff !important;
     float: right;
     margin-right: 20px;
+    text-decoration: none;
   }
 
   .anchor:hover {
@@ -90,38 +91,44 @@ const Dashboard = () => {
           </button>
         </form>
       </div>
-      <h2>Tech Stack</h2>
-      <TechStack stack={[{
-        name: 'NodeJS',
-        src: 'https://nodejs.org/static/images/logo.svg',
-        href: 'https://nodejs.org/en/'
-      }, {
-        name: 'React',
-        src: 'https://res.cloudinary.com/practicaldev/image/fetch/s--3zWuwYa3--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/pdib9r9rk5j1m7oala1p.png',
-        href: 'https://reactjs.org/',
-      }, {
-        name: "Styled Components",
-        src: "https://styled-components.com/logo.png",
-        href: 'https://styled-components.com/'
+      <div id="grid">
+        <div>
+          <h2>Tech Stack</h2>
+          <TechStack stack={[{
+            name: 'NodeJS',
+            src: 'https://nodejs.org/static/images/logo.svg',
+            href: 'https://nodejs.org/en/'
+          }, {
+            name: 'React',
+            src: 'https://res.cloudinary.com/practicaldev/image/fetch/s--3zWuwYa3--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/pdib9r9rk5j1m7oala1p.png',
+            href: 'https://reactjs.org/',
+          }, {
+            name: "Styled Components",
+            src: "https://styled-components.com/logo.png",
+            href: 'https://styled-components.com/'
 
-      }]}></TechStack>
-      <h2>Reviews</h2>
-      <Reviews reviews={[{
-        firstName: 'Scottie',
-        lastName: 'Barnes',
-        review: 'I love using this component library.',
-        date: 'January 2nd, 2022',
-      }, {
-        firstName: 'Pascal',
-        lastName: 'Siakam',
-        review: '5 stars!',
-        date: 'March 5th, 2021',
-      }, {
-        firstName: 'Fred',
-        lastName: 'Vanvleet',
-        review: 'This library has helped me scale my application 2x faster than any other library I have used before.',
-        date: 'January 2nd, 2022',
-      }]} />
+          }]}></TechStack>
+        </div>
+        <div>
+          <h2>Reviews</h2>
+          <Reviews reviews={[{
+            firstName: 'Scottie',
+            lastName: 'Barnes',
+            review: 'I love using this component library.',
+            date: 'January 2nd, 2022',
+          }, {
+            firstName: 'Pascal',
+            lastName: 'Siakam',
+            review: '5 stars!',
+            date: 'March 5th, 2021',
+          }, {
+            firstName: 'Fred',
+            lastName: 'Vanvleet',
+            review: 'This library has helped me scale my application 2x faster than any other library I have used before.',
+            date: 'January 2nd, 2022',
+          }]} />
+        </div>
+      </div>
       <Footer>
         <div>
           <img src="https://www.coolhouseplans.com/varnish-images/plans/80523/80523-b440.jpg" />

@@ -5,6 +5,7 @@ const StyledButton = styled.div`
   background-color: lightblue;
   border-radius: 4px;
   border-color: darkblue;
+  cursor: pointer;
   padding-top: 3px;
   padding-right: 3px;
   padding-bottom: 3px;

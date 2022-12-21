@@ -8,6 +8,24 @@ img {
   max-width: 100%;
 }
 
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 1000px 1000px;
+  margin: 56px 0;
+}
+
+#grid > div {
+  margin: 0 56px;
+}
+
 .review {
   display: inline-block;
   width: 30%;
@@ -16,12 +34,4 @@ img {
 .row-item {
   display: inline-block;
   width: 30%;
-}
-
-h2 {
-  margin: 0;
-}
-
-p {
-  margin: 0;
 }
