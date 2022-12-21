@@ -2,7 +2,7 @@ import MostUsedComponents from "./mostUsedComponents";
 import TechStack from "../TechStack/techStack";
 import styled from "styled-components";
 import Button from "../Button/component";
-import { useEffect } from "react";
+import { useEffect, useMemo } from "react";
 import Counter from "../Counter/counter";
 import Reviews from "../Reviews/Reviews";
 
@@ -41,9 +41,9 @@ const Dashboard = () => {
     });
   });
 
-  let license = `RealEstate.com provides unsurpassed real estate information, tools and professional expertise across a family of websites and mobile experiences for consumers and real estate professionals through all stages of the home journey. The RealEstate network includes: RealEstate.com®, Rentals.com and Houses.com™. Move also offers a complete solution of software products and services to help real estate professionals serve their clients and grow their business in a digital world. Move has the license to operate RealEstate.com® from the National Association of REALTORS®.\n
+  let license = useMemo(() => `RealEstate.com provides unsurpassed real estate information, tools and professional expertise across a family of websites and mobile experiences for consumers and real estate professionals through all stages of the home journey. The RealEstate network includes: RealEstate.com®, Rentals.com and Houses.com™. Move also offers a complete solution of software products and services to help real estate professionals serve their clients and grow their business in a digital world. Move has the license to operate RealEstate.com® from the National Association of REALTORS®.\n
   Our membership is composed of residential and commercial brokers, salespeople, property managers, appraisers, counselors, and others engaged in the real estate industry. Members belong to one or more of approximately 1,200 local associations/boards and 54 state and territory associations of REALTORS®.\n
-  The term REALTOR® is a registered collective membership mark that identifies a real estate professional who is a member of the National Association of REALTORS® and subscribes to its strict Code of Ethics.`
+  The term REALTOR® is a registered collective membership mark that identifies a real estate professional who is a member of the National Association of REALTORS® and subscribes to its strict Code of Ethics.`);
 
   const About = () => (
     <h3>
