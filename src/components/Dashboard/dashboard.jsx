@@ -71,16 +71,16 @@ const Dashboard = () => {
     <StyledDashboardComponent>
       <h2>Move UI Dashboard</h2>
       <About></About>
-      <div>
+      <div class="row-item">
         <h2>Example Counter Components</h2>
         <Counter label="Current count: "></Counter>
       </div>
-      <div>
+      <div class="row-item">
         <h2>Most Used Components</h2>
         <MostUsedComponents></MostUsedComponents>
         <Button id="btn">Click here for least used components</Button>
       </div>
-      <div>
+      <div class="row-item">
         <form>
           <h2>Search for a component</h2>
           <input type="text" />

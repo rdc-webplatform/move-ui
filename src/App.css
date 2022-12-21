@@ -4,11 +4,24 @@ div {
 }
 
 img {
-  max-height: 160px;
+  max-height: 120px;
   max-width: 100%;
 }
 
 .review {
   display: inline-block;
   width: 30%;
+}
+
+.row-item {
+  display: inline-block;
+  width: 30%;
+}
+
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
 }
