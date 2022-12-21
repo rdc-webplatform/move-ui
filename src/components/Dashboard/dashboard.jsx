@@ -11,7 +11,6 @@ const StyledDashboardComponent = styled.div``;
 const Footer = styled.div`
   background-color: #808080;
   color: #a9a9a9;
-  height: 200px;
   width: 100%;
 
   .anchor {
@@ -73,15 +72,17 @@ const Dashboard = () => {
       <h2>Move UI Dashboard</h2>
       <About></About>
       <div>
-        <span>Example Counter component</span>
+        <h2>Example Counter Components</h2>
         <Counter label="Current count: "></Counter>
       </div>
       <div>
+        <h2>Most Used Components</h2>
         <MostUsedComponents></MostUsedComponents>
         <Button id="btn">Click here for least used components</Button>
       </div>
       <div>
         <form>
+          <h2>Search for a component</h2>
           <input type="text" />
           <button id="search-btn">
             {/* Search icon */}
@@ -89,6 +90,7 @@ const Dashboard = () => {
           </button>
         </form>
       </div>
+      <h2>Tech Stack</h2>
       <TechStack stack={[{
         name: 'NodeJS',
         src: 'https://nodejs.org/static/images/logo.svg',
@@ -103,6 +105,7 @@ const Dashboard = () => {
         href: 'https://styled-components.com/'
 
       }]}></TechStack>
+      <h2>Reviews</h2>
       <Reviews reviews={[{
         firstName: 'Scottie',
         lastName: 'Barnes',

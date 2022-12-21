@@ -8,7 +8,7 @@ const Reviews = (props) => {
   return (
     <>
       {first && (
-        <div>
+        <div class="review">
           {first.firstName}
           {first.lastName}
           <p>{first.review}</p>
@@ -16,7 +16,7 @@ const Reviews = (props) => {
         </div>
       )}
       {second && (
-        <div>
+        <div class="review">
           {second.firstName}
           {second.lastName}
           <p>{second.review}</p>
@@ -24,7 +24,7 @@ const Reviews = (props) => {
         </div>
       )}
       {third && (
-        <div>
+        <div class="review">
           {third.firstName}
           {third.lastName}
           <p>{third.review}</p>
